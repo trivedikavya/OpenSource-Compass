@@ -44,6 +44,71 @@
             background-color: #1F3C88; /* var(--primary-blue) */
             transform: translateY(-4px);
         }
+        .footer {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 48px 8% 24px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 32px;
+    margin-bottom: 24px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: var(--white);
+}
+
+.footer-section p {
+    font-size: 14px;
+    opacity: 0.9;
+    max-width: 280px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 16px;
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.85;
+}
+
+/* ---------- Footer Responsive ---------- */
+@media (max-width: 600px) {
+    .footer {
+        padding: 40px 6% 20px;
+    }
+
+    .footer-section p {
+        max-width: 100%;
+    }
+}
     </style>
 </head>
 <body>
@@ -144,9 +209,52 @@
     </div>
 </section>
 
-<footer>
-    <p>© 2025 OpenSource Compass • Built for the Open Source Community</p>
+<footer class="footer">
+    <div class="footer-container">
+        
+        <!-- Brand -->
+        <div class="footer-section">
+            <h3>OpenSource Compass</h3>
+            <p>Your beginner-friendly guide to open source contributions.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="guides.html">Guides</a></li>
+                <li><a href="program.html">Programs</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+            </ul>
+        </div>
+
+        <!-- Programs -->
+        <div class="footer-section">
+            <h4>Programs</h4>
+            <ul>
+                <li><a href="ssoc.html">ssoc</a></li>
+                <li><a href="gssoc.html">GSSoC</a></li>
+                <li><a href="gsoc.html">GSoC</a></li>
+                <li><a href="outreachy.html">Outreachy</a></li>
+            </ul>
+        </div>
+
+        <!-- Community -->
+        <div class="footer-section">
+            <h4>Community</h4>
+            <ul>
+                <li><a href="https://github.com/sayeeg-11">GitHub</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 OpenSource Compass • Built for the Open Source Community</p>
+    </div>
 </footer>
+
 
 <button id="scrollTopBtn" title="Go to top">↑</button>
 

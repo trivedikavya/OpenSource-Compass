@@ -199,7 +199,11 @@
 </iframe>
 
 <footer>
-    <p>© 2025 OpenSource Compass • Built for the Open Source Community</p>
-</footer>
+        <p>&copy; <span id="current-year">2025</span> OpenSource Compass • Made with ❤️ for the Open Source Community</p>
+    </footer>
+
+    <script>
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
 
 </html>

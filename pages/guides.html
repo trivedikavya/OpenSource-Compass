@@ -273,8 +273,12 @@
     </div> 
 </div>
 <footer>
-    <p>© 2025 OpenSource Compass • Built for the Open Source Community</p>
-</footer>
+        <p>&copy; <span id="current-year">2025</span> OpenSource Compass • Made with ❤️ for the Open Source Community</p>
+    </footer>
+
+    <script>
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

@@ -212,6 +212,27 @@ OpenSource-Compass/
 
 ---
 
+<div align="left">
+
+## 🌍 Community & Contributors
+
+### 💖 Contributors  
+Thanks to these amazing people who have contributed to **OpenSource Compass** ✨  
+
+<a href="https://github.com/sayeeg-11/OpenSource-Compass/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=sayeeg-11/OpenSource-Compass" alt="Contributors" />
+</a>
+
+<br/><br/>
+
+### ⭐ Project Support
+
+[![Stars](https://img.shields.io/github/stars/sayeeg-11/OpenSource-Compass?style=social)](https://github.com/sayeeg-11/OpenSource-Compass/stargazers)
+&nbsp;&nbsp;
+[![Forks](https://img.shields.io/github/forks/sayeeg-11/OpenSource-Compass?style=social)](https://github.com/sayeeg-11/OpenSource-Compass/network/members)
+
+</div>
+
 ## 🤝 Contribution Guidelines (SWOC’26)
 
 ### How to Contribute

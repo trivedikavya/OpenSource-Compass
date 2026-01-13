@@ -24,27 +24,7 @@
 
 <body>
 
-<!-- Navbar copied EXACTLY from home.html -->
-  <header>
-      <div class="navbar-container">
-        <h1>
-          <i
-            class="fas fa-compass"
-            style="color: var(--primary-gold); margin-right: 0.4rem"
-          ></i
-          >OpenSource Compass
-        </h1>
-        <div class="nav-links">
-          <a href="../../index.html">Home</a>
-          <a href="./guides.html">Guides</a>
-          <a href="./programs.html">Programs</a>
-          <a href="./Resources.html">Resources</a>
-          <a href="./contributors.html">Contributors</a>
-          <a href="./faq.html">FAQ</a>
-          <a href="./Contribute.html">Contribute</a>
-        </div>
-      </div>
-    </header>
+  <div id="navbar"></div>
 
 <main>
   <section>
@@ -54,65 +34,15 @@
       gain real-world experience through contributions.
     </p>
 
-    <div class="card-grid">
-
-      <div class="card">
-        <h4>Social Winter of Code</h4>
-        <p>
-          A beginner-friendly winter program focused on open source contribution
-          with mentorship from experienced developers.
-        </p>
-      </div>
-
-      <div class="card">
-        <h4>GirlScript Summer of Code</h4>
-        <p>
-          A global open source program encouraging students to contribute to
-          real-world projects during the summer.
-        </p>
-      </div>
-
-      <div class="card">
-        <h4>Google Summer of Code</h4>
-        <p>
-          A prestigious international program that pairs students with
-          open source organizations for paid internships.
-        </p>
-      </div>
-
-      <div class="card">
-        <h4>Outreachy</h4>
-        <p>
-          A paid internship program focused on supporting underrepresented
-          groups in open source and tech.
-        </p>
-      </div>
-
-      <div class="card">
-        <h4>MLH Fellowship</h4>
-        <p>
-          A remote program that helps students build open source projects
-          while working closely with mentors.
-        </p>
-      </div>
-
-      <div class="card">
-        <h4>Linux Foundation Mentorship</h4>
-        <p>
-          Professional-level mentorship programs for contributors working
-          on large-scale open source ecosystems.
-        </p>
-      </div>
-
-    </div>
+    <div class="card-grid" id="programs-grid"></div>
   </section>
 </main>
 
-<footer>
-  <p>© 2026 OpenSource Compass · <a href="https://github.com/sayeeg-11/OpenSource-Compass">GitHub</a></p>
-</footer>
+<div id="footer"></div>
 
+<script src="../js/components.js"></script>
 <script src="../js/theme.js"></script>
+<script src="../js/programs-page.js"></script>
   
   <script src="../js/chatbot.js"></script>
 </body>

@@ -82,3 +82,47 @@ if (scrollProgressBar) {
     { passive: true }
   );
 }
+
+// ===============================
+// Cursor Highlight (Feature #495)
+// ===============================
+(() => {
+  const prefersReducedMotion =
+    window.matchMedia &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const cursor = document.getElementById('cursor-highlight');
+  if (!cursor || prefersReducedMotion) return;
+
+  document.body.classList.add('cursor-highlight-enabled');
+
+  let x = 0;
+  let y = 0;
+  let rafId = null;
+
+  const updateCursor = () => {
+    cursor.style.transform = `translate(${x}px, ${y}px)`;
+    rafId = null;
+  };
+
+  document.addEventListener(
+    'mousemove',
+    (e) => {
+      x = e.clientX;
+      y = e.clientY;
+
+      if (!rafId) {
+        rafId = requestAnimationFrame(updateCursor);
+      }
+    },
+    { passive: true }
+  );
+
+  document.addEventListener('mouseleave', () => {
+    cursor.style.opacity = '0';
+  });
+
+  document.addEventListener('mouseenter', () => {
+    cursor.style.opacity = '';
+  });
+})();
